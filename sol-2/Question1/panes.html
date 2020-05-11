@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editor</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="panes_style.css">
+</head>
+
+<body>
+    <div class="container" >
+      Try ME!!
+        <div class="container"id="button-row" >
+          <button class="btn btn-success" onclick="runCode()">Run</button>
+          <button class="btn btn-success" onclick="clearInput(inputcode)">Clear Input</button>
+          <button class="btn btn-success" onclick="clearOutput(outputhere)">Clear Output</button>
+          <div class="row">
+              <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" id="textareacontainer" >
+                  <textarea id="inputcode" placeholder="Add Code" spellcheck="false"></textarea>
+              </div>
+              <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6" id="iframecontainer">
+                  <iframe id="outputhere" style="width:100%; height:100%;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </iframe>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      function runCode(){
+  //     var textar=document.getElementById('inputcode');
+        var iframe=document.getElementById('outputhere');
+        var html_code=inputcode.value;
+        iframe.contentWindow.document.open();
+        iframe.contentWindow.document.write(html_code);
+        iframe.contentWindow.document.close();
+        console.log(html_code);
+      }
+
+      function clearInput(element){
+        element.value='';
+      }
+      function clearOutput(element){
+        element.src="about:blank";
+      }
+    </script
+</body>
+</html>

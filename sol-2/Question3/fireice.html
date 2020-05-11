@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>FIRE AND ICE SEARCH</title>
+    <link href="fireice-css.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+      <form>
+          <div class="form-group">
+              <label>Know Your Favourite Characters</label>
+              <input id="searchbox" type="text" placeholder="What do you want to search?" size="38">
+              <br> <br>
+              <button type="button" class="btn btn-default" onclick="search()">Search By Character</button>
+              <button type="button" class="btn btn-default" onclick="searchHouse()">Search By House</button>
+              <button type="button" class="btn btn-default" onclick="searchRandomChar()">Search By Random Character</button>
+              <button type="button" class="btn btn-default" onclick="searchRandomHouse()">Search By Random House</button>
+              <button type="button" class="btn btn-default" onclick="searchCharByHouse()">Search Character By House</button>
+          </div>
+
+      </form>
+      <div class="container">
+          <p id="para"> </p>
+        
+      </div>
+
+
+    </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="fireice-js.js"> </script>
+</body>
+
+</html>

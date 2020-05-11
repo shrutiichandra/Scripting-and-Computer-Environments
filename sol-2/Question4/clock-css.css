@@ -1,0 +1,98 @@
+body{
+  background: #FFEBCD;
+}
+.clock-face{
+    margin: auto;
+/* align: center; */
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(mistyRose,lavender);
+    position: relative;
+    border: 1px indigo solid;
+
+  }
+  .point{
+    top:50%;
+    left:50%;
+    width: 20px;
+    height: 20px;
+    background:radial-gradient(brown,#B8860B);
+    border-radius: 30%;
+    position: relative;
+  }
+  #hours{
+    /* margin: auto; */
+    height:100px;
+    width: 10px;
+    left: 52%;
+    top: 32%;
+    background-color: #8B4513;
+    position: absolute;
+    /* transform-origin: 0 0; */
+    transform-origin: bottom;
+     /* transform: rotate(180deg); */
+  }
+  #min{
+    /* margin: auto; */
+    height:160px;
+    width: 5px;
+    left: 52%;
+    top: 20%;
+    background-color: #a0522d;
+    position: absolute;
+    /* transform-origin: 0% 0%; */
+    transform-origin: bottom;
+    /* transform: rotate(180deg); */
+  }
+  #sec{
+    /* margin: auto; */
+    height:130px;
+    width: 2px;
+    left: 52%;
+    top: 25%;
+    background-color: #a0632d;
+    position: absolute;
+    /* transform-origin: 0% 0%; */
+    transform-origin: bottom;
+    /* transform: rotate(180deg); */
+  }
+
+  span {
+   display: inline-block;
+}
+
+  .secdiv:nth-of-type(5n+2) {
+     position: absolute;
+     top: 0px;
+     left: 250px;
+     bottom: 0;
+     right: 0;
+     /* margin-left: -2px; */
+     width: 4px;
+     height: 25px;
+     background: #663399;
+     z-index: 2;
+     transform-origin: 50% 249px;
+  }
+  .secdiv {
+     position: absolute;
+     top: 0px;
+     left:250;
+       /* margin-left: -1px; */
+       width: 2px;
+       height: 10px;
+       background: #BA55D3;
+       z-index: 1;
+       transform-origin: 70% 247px;
+    }
+p{
+    font-weight: 800;
+    font-size:40px;
+    font-family: "Courier New Header";
+    padding: 10px;
+    margin: 10;
+    text-align: center;
+    color: #4b0082;
+
+}

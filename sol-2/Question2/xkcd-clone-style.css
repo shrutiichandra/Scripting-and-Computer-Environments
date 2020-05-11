@@ -1,0 +1,45 @@
+html{
+   overflow-y: scroll;
+}
+body{
+  background-color: #99bbff;
+  text-align: center;
+  font-size: 18px;
+  font-variant:small-caps;
+	font-family:Lucida,Helvetica,sans-serif;
+	font-weight:500;
+  width: 780px;
+
+}
+#title_comic{
+  font-weight:800;
+}
+.box{
+  width: 800px;
+  padding: 10px;
+  background: white;
+  border: solid 2px black;
+  position:absolute;
+  top: 30%;
+  left: 40%;
+  /* margin: 5px auto; */
+  margin-left: -25%;
+  margin-top: -10%;
+
+}
+
+#title_comic{
+  font-weight: 800px;
+
+}
+
+.btn-default{
+  background-color: #6794d5;
+  font-weight: 600px;
+  color: white;
+
+}
+
+#comic_page{
+  padding:10px;
+}

@@ -1,0 +1,49 @@
+body, html,div {
+  height: 100%;
+}
+body{
+  background-image: linear-gradient(to right, #F3F0F3 , #F3DAF4);
+  /* opacity: 0.5 */
+}
+div{
+  padding: 20px;
+  font-size: 30px;
+  font-family: Trebuchet;
+  text-align: center;
+  /* background-color: #ffffff; */
+}
+
+#inputcode{
+  font-size: 20px;
+  font-family: consolas,monospace;
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+.btn{
+  font-size: 20px;
+  font-family: Garamond;
+  border: 2px solid black;
+  background: #b3ffb3;
+  color: black;
+  /* background: yellow */
+}
+#button-row{
+
+  padding: 5px;
+  /* background-color: #EED1F0; */
+
+}
+/* #outputhere{
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+} */
+
+
+ #outputhere{
+  background-color: white;
+  border: 1px solid black;
+}

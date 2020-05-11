@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="xkcd-clone-style.css">
+    <title>xkcd::clone</title>
+</head>
+
+<body onload="makeRequest();">
+  <div class="box" id="comic_content" align="center">
+    <div id="title_comic">
+      Here goes title.
+    </div>
+    <div id="button_bar">
+      <button class="btn btn-default" onclick="first()"> |< </button>
+      <button class="btn btn-default" onclick="prev()"> < Prev </button>
+      <button class="btn btn-default" onclick="random()"> RANDOM </button>
+      <button class="btn btn-default" onclick="next()"> NEXT> </button>
+      <button class="btn btn-default" onclick="last()"> |> </button>
+    </div>
+    <img id="comic_page">
+    <div id="button_bar">
+      <button class="btn btn-default" onclick="first()"> |< </button>
+      <button class="btn btn-default" onclick="prev()"> < Prev </button>
+      <button class="btn btn-default" onclick="random()"> RANDOM </button>
+      <button class="btn btn-default" onclick="next()"> NEXT> </button>
+      <button class="btn btn-default" onclick="last()"> |> </button>
+    </div>
+    <div id="foot_note">
+      <p id="permalink"> </p>
+      <p id="imgdes"> </p>
+    </div>
+  </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="xkcd-clone-sc.js"> </script>
+
+</body>
+
+</html>
