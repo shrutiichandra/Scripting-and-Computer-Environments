@@ -1,0 +1,1 @@
+grep '.*[[:punct:]].*' b. grep '.*[[:upper:]]\>' /usr/share/dict/words

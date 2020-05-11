@@ -1,0 +1,1 @@
+grep '[a-zA-Z]\{20,\}' b. grep '.*[[:upper:]]\>' /usr/share/dict/words

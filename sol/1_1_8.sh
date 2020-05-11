@@ -1,0 +1,1 @@
+grep '^[a-z]\{5\}$\|^[a-z]\{10\}$' b. grep '.*[[:upper:]]\>' /usr/share/dict/words

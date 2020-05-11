@@ -1,0 +1,1 @@
+grep '\<\([a-zA-Z]\).*\1\>' \usr\share\dict\words
